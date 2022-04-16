@@ -44,10 +44,6 @@ public class FlywayTests {
         Flyway flyway1 = getBaseFlywayConfiguration()
                 .locations("flywaytestscenario1/secondmigration").load();
         flyway1.migrate();
-//        //add missing migration not in classpath to flyway_schema_history
-//        String missingMigration = "V2022_01_02_14_01_22__create_salary_table.sql";
-//        jdbcTemplate.execute("INSERT INTO flyway_schema_history (installed_rank,version,description,type,script,checksum,installed_by,execution_time,success) VALUES (1, '2022.01.02.14.01.22', 'migration script', 'SQL', '" + missingMigration + "', -1362741165, 'REDGATE_PRODUCTION', 1, true)");
-
 
         Flyway flyway2 = getBaseFlywayConfiguration()
                 .locations("flywaytestscenario1/firstmigration")
