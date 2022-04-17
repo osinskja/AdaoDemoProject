@@ -132,7 +132,7 @@ public class FlywayTests {
     }
 
     @Test
-    void shouldApplyOneMigrationAndFailWhenIgnoreIgnoredMigrationsFalseAndRunningMigrationsInOrder() {
+    void shouldApplyOneMigrationAndFailWhenIgnoreIgnoredMigrationsFalseAndRunningMigrationsOutOfOrder() {
         Flyway flyway1 = getBaseFlywayConfiguration()
                 .locations("flywaytestscenario1/secondmigration").load();
         flyway1.migrate();
@@ -151,7 +151,7 @@ public class FlywayTests {
     }
 
     @Test
-    void shouldApplyBothMigrationsWhenIgnoreIgnoredMigrationsTrueAndRunningMigrationsInOrder() {
+    void shouldApplyBothMigrationsWhenIgnoreIgnoredMigrationsTrueAndRunningMigrationsOutOfOrder() {
         Flyway flyway1 = getBaseFlywayConfiguration()
                 .locations("flywaytestscenario1/secondmigration").load();
         flyway1.migrate();
