@@ -1,4 +1,5 @@
 rootProject.name = 'demo'
 include 'app'
-include 'data'
+include 'flyway'
+include 'hashcode-equals'
 
