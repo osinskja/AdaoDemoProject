@@ -2,4 +2,5 @@ rootProject.name = 'demo'
 include 'app'
 include 'flyway'
 include 'hashcode-equals'
+include 'beanscopes'
 
