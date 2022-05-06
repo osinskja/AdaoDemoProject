@@ -3,4 +3,7 @@ include 'app'
 include 'flyway'
 include 'hashcode-equals'
 include 'beanscopes'
+include 'design-patterns:strategy'
+include 'design-patterns:observer'
+include 'design-patterns:decorator'
 

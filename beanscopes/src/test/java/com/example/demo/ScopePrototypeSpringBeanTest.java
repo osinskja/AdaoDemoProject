@@ -31,7 +31,7 @@ class ScopePrototypeSpringBeanTest {
 	}
 
 	@Test
-	void shouldUseSameDirectoryForBothConnectors() {
+	void shouldUseDifferentDirectoryForBothConnectors() {
 		integrationPersonSftpConnector.downloadFile();
 		integrationPersonSftpConnector.uploadFile();
 

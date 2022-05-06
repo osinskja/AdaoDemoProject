@@ -1,0 +1,3 @@
+1. Strategy vs Decorator:
+In Decorator pattern we can add behaviour to and modify the method we decorate, but we need to provide some default behaviour for it.
+In Strategy pattern we can only modify the behaviour of the method we set strategy for, but we do not have to provide the default behaviour.
